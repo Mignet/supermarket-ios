@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINOT-Medium.ttf">
+            <string>DINOT-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyInvestCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-VA-opY">
+                        <rect key="frame" x="0.0" y="18" width="137" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKU-Zf-Qsk">
+                        <rect key="frame" x="137" y="18" width="107" height="21"/>
+                        <fontDescription key="fontDescription" name="DINOT-Medium" family="DINOT" pointSize="14"/>
+                        <color key="textColor" red="0.30980392156862746" green="0.34901960784313724" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xn_FinancialManager_agent_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="VVy-Xc-BC6">
+                        <rect key="frame" x="15" y="16" width="60" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="snd-qZ-iTt"/>
+                            <constraint firstAttribute="height" constant="26" id="wiB-6l-l61"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_MyInfo_AccountManager_go_icon_in.png" translatesAutoresizingMaskIntoConstraints="NO" id="YkF-Ob-8jl">
+                        <rect key="frame" x="352" y="21" width="8" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="HQ8-l5-JFu"/>
+                            <constraint firstAttribute="height" constant="15" id="PzI-fQ-IgW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6M-kW-vwQ">
+                        <rect key="frame" x="15" y="57.5" width="360" height="0.5"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="lOg-2R-m5T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUX-a8-r9Z">
+                        <rect key="frame" x="244" y="19" width="131" height="21"/>
+                        <fontDescription key="fontDescription" name="DINOT-Medium" family="DINOT" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="MKU-Zf-Qsk" secondAttribute="bottom" constant="10.5" id="1X2-IT-2qE"/>
+                    <constraint firstItem="MKU-Zf-Qsk" firstAttribute="leading" secondItem="uIA-VA-opY" secondAttribute="trailing" id="2Ie-Vs-PTd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VUX-a8-r9Z" secondAttribute="bottom" constant="9.5" id="7Pl-rq-u3T"/>
+                    <constraint firstItem="MKU-Zf-Qsk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.285" id="AGH-yg-fUI"/>
+                    <constraint firstItem="uIA-VA-opY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AhI-pQ-L8y"/>
+                    <constraint firstItem="d6M-kW-vwQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="BD3-l7-TFa"/>
+                    <constraint firstItem="uIA-VA-opY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Je0-7r-aUa"/>
+                    <constraint firstItem="VVy-Xc-BC6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="VcX-cl-hNY"/>
+                    <constraint firstItem="VUX-a8-r9Z" firstAttribute="leading" secondItem="MKU-Zf-Qsk" secondAttribute="trailing" id="WOD-Mx-4du"/>
+                    <constraint firstAttribute="bottom" secondItem="uIA-VA-opY" secondAttribute="bottom" constant="18.5" id="d9g-DT-7v4"/>
+                    <constraint firstItem="MKU-Zf-Qsk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="hCD-9N-Y7x"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VVy-Xc-BC6" secondAttribute="bottom" constant="7.5" id="ifR-mX-qaw"/>
+                    <constraint firstItem="VUX-a8-r9Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="jRl-mo-raQ"/>
+                    <constraint firstAttribute="trailing" secondItem="d6M-kW-vwQ" secondAttribute="trailing" id="jXx-N1-hQW"/>
+                    <constraint firstItem="uIA-VA-opY" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.365" id="rDW-7H-VCy"/>
+                    <constraint firstAttribute="bottom" secondItem="d6M-kW-vwQ" secondAttribute="bottom" id="uNn-pl-fZO"/>
+                    <constraint firstItem="YkF-Ob-8jl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="v7S-2Z-mnc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YkF-Ob-8jl" secondAttribute="trailing" constant="7" id="w7K-bz-K0z"/>
+                    <constraint firstItem="VVy-Xc-BC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="zNK-Aq-Mmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VUX-a8-r9Z" secondAttribute="trailing" id="5dK-pa-D9d"/>
+            </constraints>
+            <connections>
+                <outlet property="investProfitLabel" destination="VUX-a8-r9Z" id="LEI-K5-xAP"/>
+                <outlet property="investingMoneyLabel" destination="MKU-Zf-Qsk" id="sqG-K4-mFh"/>
+                <outlet property="logoImageView" destination="VVy-Xc-BC6" id="aCT-ag-aIZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XN_MyInfo_AccountManager_go_icon_in.png" width="16" height="28"/>
+        <image name="xn_FinancialManager_agent_logo.png" width="121" height="53"/>
+    </resources>
+</document>

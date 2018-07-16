@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponContainerViewController">
+            <connections>
+                <outlet property="contentContainerScrollView" destination="kWm-6Z-eyB" id="w8m-FB-RrS"/>
+                <outlet property="headContainerScrollView" destination="9Mh-FK-GU2" id="jna-kR-QC4"/>
+                <outlet property="titleContainerScrollView" destination="Oti-zf-3DQ" id="oXy-eV-fRp"/>
+                <outlet property="view" destination="KlY-my-a0R" id="lYo-6G-KSp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="KlY-my-a0R">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mh-FK-GU2" customClass="CustomScrollPanView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oti-zf-3DQ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="NRP-Ze-Ntc"/>
+                            </constraints>
+                        </scrollView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgo-Nc-Ehd">
+                            <rect key="frame" x="0.0" y="45" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="cZr-mb-vP3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Oti-zf-3DQ" secondAttribute="bottom" constant="2" id="16V-ao-0pN"/>
+                        <constraint firstAttribute="height" constant="46" id="4np-Eg-HTC"/>
+                        <constraint firstItem="Oti-zf-3DQ" firstAttribute="top" secondItem="9Mh-FK-GU2" secondAttribute="top" id="9b8-fe-gUo"/>
+                        <constraint firstItem="Oti-zf-3DQ" firstAttribute="width" secondItem="9Mh-FK-GU2" secondAttribute="width" id="AHo-au-Wss"/>
+                        <constraint firstAttribute="bottom" secondItem="Fgo-Nc-Ehd" secondAttribute="bottom" id="I2Z-3b-2qv"/>
+                        <constraint firstAttribute="trailing" secondItem="Oti-zf-3DQ" secondAttribute="trailing" id="IlL-04-Z1P"/>
+                        <constraint firstItem="Fgo-Nc-Ehd" firstAttribute="leading" secondItem="9Mh-FK-GU2" secondAttribute="leading" id="Zmv-iJ-k6A"/>
+                        <constraint firstAttribute="trailing" secondItem="Fgo-Nc-Ehd" secondAttribute="trailing" id="ezg-mS-2r2"/>
+                        <constraint firstItem="Oti-zf-3DQ" firstAttribute="leading" secondItem="9Mh-FK-GU2" secondAttribute="leading" id="iDb-CY-bny"/>
+                    </constraints>
+                </scrollView>
+                <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-6Z-eyB" customClass="CustomScrollPanView">
+                    <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="c1j-cn-hps"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Mh-FK-GU2" firstAttribute="top" secondItem="KlY-my-a0R" secondAttribute="top" id="KwR-Ns-EoC"/>
+                <constraint firstAttribute="trailing" secondItem="9Mh-FK-GU2" secondAttribute="trailing" id="OX2-nR-0GC"/>
+                <constraint firstAttribute="trailing" secondItem="kWm-6Z-eyB" secondAttribute="trailing" id="UDt-GV-hvv"/>
+                <constraint firstItem="kWm-6Z-eyB" firstAttribute="leading" secondItem="KlY-my-a0R" secondAttribute="leading" id="UwG-gY-xZn"/>
+                <constraint firstAttribute="bottom" secondItem="kWm-6Z-eyB" secondAttribute="bottom" id="g8e-G8-W6O"/>
+                <constraint firstItem="9Mh-FK-GU2" firstAttribute="leading" secondItem="KlY-my-a0R" secondAttribute="leading" id="pH2-AB-oQb"/>
+                <constraint firstItem="kWm-6Z-eyB" firstAttribute="top" secondItem="9Mh-FK-GU2" secondAttribute="bottom" id="pMb-Fg-2ct"/>
+            </constraints>
+            <point key="canvasLocation" x="-208" y="-722"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

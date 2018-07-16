@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountCenterController">
+            <connections>
+                <outlet property="setListTableView" destination="3Qg-5o-zSo" id="oSW-xQ-0hg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Qg-5o-zSo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oma-fO-gmJ"/>
+                        <outlet property="delegate" destination="-1" id="8Sh-Er-9o2"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFV-De-tdf">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.54901960780000003" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wLq-WK-npS"/>
+                    </constraints>
+                    <state key="normal" title="安全退出"/>
+                    <connections>
+                        <action selector="clickExit:" destination="-1" eventType="touchUpInside" id="1hs-69-baR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Qg-5o-zSo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="25H-CP-ghv"/>
+                <constraint firstAttribute="trailing" secondItem="3Qg-5o-zSo" secondAttribute="trailing" id="9Wd-GM-4j1"/>
+                <constraint firstAttribute="bottom" secondItem="3Qg-5o-zSo" secondAttribute="bottom" id="IWe-Ox-jxh"/>
+                <constraint firstAttribute="trailing" secondItem="dFV-De-tdf" secondAttribute="trailing" id="Qjc-CV-x6U"/>
+                <constraint firstItem="3Qg-5o-zSo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U0G-4a-yv5"/>
+                <constraint firstAttribute="bottom" secondItem="dFV-De-tdf" secondAttribute="bottom" id="hau-Ps-alg"/>
+                <constraint firstItem="dFV-De-tdf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hst-7U-Gpk"/>
+            </constraints>
+            <point key="canvasLocation" x="-52" y="56"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

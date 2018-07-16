@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController">
+            <connections>
+                <outlet property="versionLabel" destination="2UK-09-BWx" id="ycL-Vg-d9m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="gDj-Pr-oSs">
+                    <rect key="frame" x="114.5" y="260.5" width="146" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="146" id="MRv-md-6TN"/>
+                        <constraint firstAttribute="width" constant="146" id="nkJ-Ri-pl1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UK-09-BWx">
+                    <rect key="frame" x="0.0" y="634" width="375" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="aHy-eO-jLd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.42352941176470588" green="0.43137254901960786" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gDj-Pr-oSs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EB2-kO-zof"/>
+                <constraint firstAttribute="bottom" secondItem="2UK-09-BWx" secondAttribute="bottom" constant="18" id="EO8-rR-GU9"/>
+                <constraint firstAttribute="trailing" secondItem="2UK-09-BWx" secondAttribute="trailing" id="IM3-IK-vNT"/>
+                <constraint firstItem="gDj-Pr-oSs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uge-XB-Eyi"/>
+                <constraint firstItem="2UK-09-BWx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qlo-Gx-K92"/>
+            </constraints>
+            <point key="canvasLocation" x="29" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Launch" width="146" height="146"/>
+    </resources>
+</document>

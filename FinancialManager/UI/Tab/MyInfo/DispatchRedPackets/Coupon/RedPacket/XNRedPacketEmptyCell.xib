@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XNRedPacketEmptyCell" rowHeight="557" id="KGk-i7-Jjw" customClass="XNRedPacketEmptyCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="556.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrL-bH-RpH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_Product_list_empty_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zqd-wr-DDJ">
+                                <rect key="frame" x="150" y="220" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="8Nh-Me-cTr"/>
+                                    <constraint firstAttribute="height" constant="75" id="Ixi-wL-TtO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-m6-uMj">
+                                <rect key="frame" x="0.0" y="307" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydF-iM-YkO">
+                                <rect key="frame" x="0.0" y="309" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cO-eZ-PoC">
+                                <rect key="frame" x="187" y="278" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="2zC-GO-VNT"/>
+                                    <constraint firstAttribute="height" constant="1" id="CXC-df-LvD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ydF-iM-YkO" secondAttribute="trailing" id="32G-u9-bb3"/>
+                            <constraint firstItem="sdk-m6-uMj" firstAttribute="top" secondItem="Zqd-wr-DDJ" secondAttribute="bottom" constant="12" id="B3t-32-oPA"/>
+                            <constraint firstItem="sdk-m6-uMj" firstAttribute="leading" secondItem="DrL-bH-RpH" secondAttribute="leading" id="IcF-sl-LVQ"/>
+                            <constraint firstItem="3cO-eZ-PoC" firstAttribute="top" secondItem="Zqd-wr-DDJ" secondAttribute="bottom" constant="-17" id="QFf-ne-k2t"/>
+                            <constraint firstItem="sdk-m6-uMj" firstAttribute="centerX" secondItem="DrL-bH-RpH" secondAttribute="centerX" id="X1r-nR-cwq"/>
+                            <constraint firstItem="ydF-iM-YkO" firstAttribute="top" secondItem="sdk-m6-uMj" secondAttribute="bottom" constant="2" id="eIU-Hi-GnX"/>
+                            <constraint firstItem="3cO-eZ-PoC" firstAttribute="centerY" secondItem="DrL-bH-RpH" secondAttribute="centerY" id="f2T-d7-fK7"/>
+                            <constraint firstItem="Zqd-wr-DDJ" firstAttribute="centerX" secondItem="DrL-bH-RpH" secondAttribute="centerX" id="gQ4-7h-0PQ"/>
+                            <constraint firstItem="3cO-eZ-PoC" firstAttribute="centerX" secondItem="DrL-bH-RpH" secondAttribute="centerX" id="ihh-cW-VPg"/>
+                            <constraint firstItem="ydF-iM-YkO" firstAttribute="leading" secondItem="DrL-bH-RpH" secondAttribute="leading" id="ogi-mt-k1b"/>
+                            <constraint firstAttribute="trailing" secondItem="sdk-m6-uMj" secondAttribute="trailing" id="u5S-Lv-Ta0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DrL-bH-RpH" secondAttribute="trailing" id="64K-Zi-FOe"/>
+                <constraint firstItem="DrL-bH-RpH" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="LV1-gH-9o7"/>
+                <constraint firstAttribute="bottom" secondItem="DrL-bH-RpH" secondAttribute="bottom" id="Pir-WJ-Zbu"/>
+                <constraint firstItem="DrL-bH-RpH" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="fKn-3S-i7W"/>
+            </constraints>
+            <connections>
+                <outlet property="subTitleLabel" destination="ydF-iM-YkO" id="gyk-Aa-vQS"/>
+                <outlet property="titleLabel" destination="sdk-m6-uMj" id="TAg-NY-Uy6"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="-92.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XN_Product_list_empty_icon.png" width="104" height="97"/>
+    </resources>
+</document>

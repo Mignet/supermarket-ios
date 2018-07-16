@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgentContainerController">
+            <connections>
+                <outlet property="agentButton" destination="nqA-Cw-c9K" id="eVl-FF-Xe2"/>
+                <outlet property="bundButton" destination="xPe-kL-hyi" id="gVl-l5-fBP"/>
+                <outlet property="cursorView" destination="m8P-kt-gOC" id="w0O-G6-lcs"/>
+                <outlet property="insuranceButton" destination="431-6T-Nn0" id="r6G-0u-GIL"/>
+                <outlet property="p2pButton" destination="FYM-Pm-3WA" id="mxn-Aa-Das"/>
+                <outlet property="scrollView" destination="eoY-bu-IxA" id="Laa-fY-0eN"/>
+                <outlet property="switchView" destination="yim-tk-0H9" id="dT6-u3-EPo"/>
+                <outlet property="view" destination="4G4-mR-fb9" id="hiK-3g-UPU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4G4-mR-fb9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoY-bu-IxA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="MHS-sK-F3m"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eoY-bu-IxA" secondAttribute="trailing" id="32a-43-fgP"/>
+                <constraint firstItem="eoY-bu-IxA" firstAttribute="leading" secondItem="4G4-mR-fb9" secondAttribute="leading" id="CsW-4q-rys"/>
+                <constraint firstItem="eoY-bu-IxA" firstAttribute="top" secondItem="4G4-mR-fb9" secondAttribute="top" id="JcE-Yj-TcE"/>
+                <constraint firstAttribute="bottom" secondItem="eoY-bu-IxA" secondAttribute="bottom" id="sv7-zL-Sxv"/>
+            </constraints>
+            <point key="canvasLocation" x="538" y="-358"/>
+        </view>
+        <view contentMode="scaleToFill" id="yim-tk-0H9" customClass="SwitchView">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-kt-gOC">
+                    <rect key="frame" x="30" y="36" width="42" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqA-Cw-c9K">
+                    <rect key="frame" x="4.5" y="8" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="DqW-ML-GIS"/>
+                        <constraint firstAttribute="width" constant="70" id="i3b-fB-EQM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="平台">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRankButton:" destination="-1" eventType="touchUpInside" id="hDJ-8U-bxR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYM-Pm-3WA">
+                    <rect key="frame" x="73.5" y="8" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="FCx-5x-aXz"/>
+                        <constraint firstAttribute="width" constant="70" id="SKv-Ya-anN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="网贷">
+                        <color key="titleColor" red="0.79607843140000001" green="0.87450980389999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRankButton:" destination="-1" eventType="touchUpInside" id="b9Q-3g-4Dj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPe-kL-hyi">
+                    <rect key="frame" x="142.5" y="8" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="A9M-te-uBe"/>
+                        <constraint firstAttribute="width" constant="70" id="cUC-D5-atl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="基金">
+                        <color key="titleColor" red="0.79607843140000001" green="0.87450980389999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRankButton:" destination="-1" eventType="touchUpInside" id="SeD-78-dBl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="431-6T-Nn0">
+                    <rect key="frame" x="211.5" y="8" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Bfp-l5-j0O"/>
+                        <constraint firstAttribute="height" constant="25" id="ZDk-JW-IbA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="保险">
+                        <color key="titleColor" red="0.79607843140000001" green="0.87450980389999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRankButton:" destination="-1" eventType="touchUpInside" id="HJH-mr-SAO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FYM-Pm-3WA" firstAttribute="centerX" secondItem="yim-tk-0H9" secondAttribute="centerX" constant="-35" id="7XD-gx-mO9"/>
+                <constraint firstItem="FYM-Pm-3WA" firstAttribute="leading" secondItem="nqA-Cw-c9K" secondAttribute="trailing" constant="-1" id="7aG-Ha-DTz"/>
+                <constraint firstItem="431-6T-Nn0" firstAttribute="leading" secondItem="xPe-kL-hyi" secondAttribute="trailing" constant="-1" id="Euj-GX-OAJ"/>
+                <constraint firstItem="nqA-Cw-c9K" firstAttribute="centerY" secondItem="yim-tk-0H9" secondAttribute="centerY" id="GhN-QV-pYq"/>
+                <constraint firstItem="FYM-Pm-3WA" firstAttribute="top" secondItem="nqA-Cw-c9K" secondAttribute="bottom" constant="-25" id="XDT-Ld-690"/>
+                <constraint firstItem="xPe-kL-hyi" firstAttribute="leading" secondItem="FYM-Pm-3WA" secondAttribute="trailing" constant="-1" id="uAe-h5-VbF"/>
+                <constraint firstItem="xPe-kL-hyi" firstAttribute="top" secondItem="FYM-Pm-3WA" secondAttribute="top" id="uNE-Ff-ENZ"/>
+                <constraint firstItem="431-6T-Nn0" firstAttribute="top" secondItem="xPe-kL-hyi" secondAttribute="top" id="ugw-Ol-rdS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-261" y="-747"/>
+        </view>
+    </objects>
+</document>

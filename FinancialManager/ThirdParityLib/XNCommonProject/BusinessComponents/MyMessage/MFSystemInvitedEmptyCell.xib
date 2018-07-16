@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="MFSystemInvitedEmptyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_Product_list_empty_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-jA-ecT">
+                        <rect key="frame" x="122.5" y="22.5" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Bfe-a1-1UZ"/>
+                            <constraint firstAttribute="height" constant="75" id="g21-KT-Uw5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-pO-QXf">
+                        <rect key="frame" x="0.0" y="107.5" width="320" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p5-OF-OzO">
+                        <rect key="frame" x="90" y="127.5" width="140" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="c5c-Es-vkx"/>
+                            <constraint firstAttribute="width" constant="140" id="sCv-qa-yAM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="购买基金" backgroundImage="XN_CS_Customer_recommend_icon.png"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j5L-f5-swH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iPE-jA-ecT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-40" id="Dtj-L5-hup"/>
+                    <constraint firstItem="0p5-OF-OzO" firstAttribute="top" secondItem="JIo-pO-QXf" secondAttribute="bottom" constant="20" id="R2F-to-Tpt"/>
+                    <constraint firstAttribute="trailing" secondItem="JIo-pO-QXf" secondAttribute="trailing" id="TNb-8c-8GN"/>
+                    <constraint firstItem="JIo-pO-QXf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lxh-8k-jlq"/>
+                    <constraint firstItem="JIo-pO-QXf" firstAttribute="top" secondItem="iPE-jA-ecT" secondAttribute="bottom" constant="10" id="uFd-A2-n6F"/>
+                    <constraint firstItem="iPE-jA-ecT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="w9I-8n-9My"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0p5-OF-OzO" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="Ivl-Pc-f2b"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="0p5-OF-OzO" id="gKc-c6-qUG"/>
+                <outlet property="errorImageView" destination="iPE-jA-ecT" id="afw-BT-G1l"/>
+                <outlet property="titleLabel" destination="JIo-pO-QXf" id="abQ-pp-CfV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XN_CS_Customer_recommend_icon.png" width="280" height="96"/>
+        <image name="XN_Product_list_empty_icon.png" width="104" height="97"/>
+    </resources>
+</document>

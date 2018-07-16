@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="contentTableView" destination="8x5-Uy-KHm" id="eNC-kI-xgt"/>
+                <outlet property="msgImageView" destination="cPZ-yM-niz" id="1Fo-Ay-5Md"/>
+                <outlet property="msgTopIntervelConstraint" destination="wFe-h2-tZR" id="zZN-mM-7d2"/>
+                <outlet property="msgView" destination="Ef1-RJ-4Fz" id="gAA-aK-jRc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="7vE-gO-ftk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-Uy-KHm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dcU-6k-VNs"/>
+                        <outlet property="delegate" destination="-1" id="aSr-on-dgp"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef1-RJ-4Fz">
+                    <rect key="frame" x="327" y="22" width="33" height="33"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAs-eH-Pbb">
+                            <rect key="frame" x="-10" y="-10" width="53" height="53"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="enterMsgAction:" destination="-1" eventType="touchUpInside" id="dHp-9q-fO2"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagecenter_mail_white_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cPZ-yM-niz">
+                            <rect key="frame" x="0.0" y="-1" width="33" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Ne0-6i-oda"/>
+                                <constraint firstAttribute="width" constant="33" id="zO0-eD-WXz"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="PAs-eH-Pbb" firstAttribute="leading" secondItem="Ef1-RJ-4Fz" secondAttribute="leading" constant="-10" id="Nw3-yL-Eum"/>
+                        <constraint firstAttribute="bottom" secondItem="PAs-eH-Pbb" secondAttribute="bottom" constant="-10" id="Tfy-nG-BuF"/>
+                        <constraint firstItem="cPZ-yM-niz" firstAttribute="centerX" secondItem="Ef1-RJ-4Fz" secondAttribute="centerX" id="Z6K-3z-U0U"/>
+                        <constraint firstAttribute="height" constant="33" id="ZHI-gK-kcd"/>
+                        <constraint firstItem="PAs-eH-Pbb" firstAttribute="top" secondItem="Ef1-RJ-4Fz" secondAttribute="top" constant="-10" id="eFj-JI-0VP"/>
+                        <constraint firstItem="cPZ-yM-niz" firstAttribute="centerY" secondItem="Ef1-RJ-4Fz" secondAttribute="centerY" id="iHf-mX-Z6I"/>
+                        <constraint firstAttribute="width" constant="33" id="lxI-Da-BA7"/>
+                        <constraint firstAttribute="trailing" secondItem="PAs-eH-Pbb" secondAttribute="trailing" constant="-10" id="uXN-H8-dfv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="16.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8x5-Uy-KHm" secondAttribute="bottom" id="5A9-sW-8cG"/>
+                <constraint firstAttribute="trailing" secondItem="8x5-Uy-KHm" secondAttribute="trailing" id="5LV-dW-YOD"/>
+                <constraint firstItem="8x5-Uy-KHm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dEa-Hy-r9G"/>
+                <constraint firstItem="8x5-Uy-KHm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kBW-rJ-d2f"/>
+                <constraint firstAttribute="trailing" secondItem="Ef1-RJ-4Fz" secondAttribute="trailing" constant="15" id="lAL-yE-7yD"/>
+                <constraint firstItem="Ef1-RJ-4Fz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="wFe-h2-tZR"/>
+            </constraints>
+            <point key="canvasLocation" x="-589" y="-1048"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="messagecenter_mail_white_icon.png" width="33" height="34"/>
+    </resources>
+</document>

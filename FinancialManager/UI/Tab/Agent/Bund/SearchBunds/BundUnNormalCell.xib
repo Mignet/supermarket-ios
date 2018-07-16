@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="BundUnNormalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-D7-Mrx">
+                        <rect key="frame" x="159.5" y="99.5" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="b6l-E0-R6q"/>
+                            <constraint firstAttribute="width" constant="1" id="cuJ-5G-3km"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_Bund_Filter_UnNormal_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-jA-ecT">
+                        <rect key="frame" x="104.5" y="19.5" width="110" height="121"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="6b7-pb-UD1"/>
+                            <constraint firstAttribute="height" constant="121" id="UaH-sL-ecg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该页面已经飞到了外太空，" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIo-pO-QXf">
+                        <rect key="frame" x="0.0" y="140.5" width="320" height="23"/>
+                        <color key="tintColor" red="0.0078431372549019607" green="0.62745098039215685" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="rrL-u9-d82"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请稍后再试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-IG-lgU">
+                        <rect key="frame" x="0.0" y="156.5" width="320" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="eyT-DG-oLt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iPE-jA-ecT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3Gy-RK-kRn"/>
+                    <constraint firstItem="dZk-IG-lgU" firstAttribute="top" secondItem="JIo-pO-QXf" secondAttribute="bottom" constant="-7" id="BSt-pc-qgR"/>
+                    <constraint firstItem="K0h-D7-Mrx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jer-GG-fsB"/>
+                    <constraint firstItem="K0h-D7-Mrx" firstAttribute="top" secondItem="iPE-jA-ecT" secondAttribute="bottom" constant="-41" id="LGl-eH-sht"/>
+                    <constraint firstItem="dZk-IG-lgU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PZp-o9-KkI"/>
+                    <constraint firstAttribute="trailing" secondItem="dZk-IG-lgU" secondAttribute="trailing" id="PpK-Pd-5GV"/>
+                    <constraint firstAttribute="trailing" secondItem="JIo-pO-QXf" secondAttribute="trailing" id="TNb-8c-8GN"/>
+                    <constraint firstItem="JIo-pO-QXf" firstAttribute="top" secondItem="iPE-jA-ecT" secondAttribute="bottom" id="XmV-Pw-Pnm"/>
+                    <constraint firstItem="K0h-D7-Mrx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zf4-cJ-W1v"/>
+                    <constraint firstItem="JIo-pO-QXf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lxh-8k-jlq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="iconImageView" destination="iPE-jA-ecT" id="hHF-gJ-kDo"/>
+                <outlet property="subTitleLabel" destination="dZk-IG-lgU" id="Rbl-cc-KIk"/>
+                <outlet property="titleLabel" destination="JIo-pO-QXf" id="abQ-pp-CfV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="XN_Bund_Filter_UnNormal_icon.png" width="110" height="121"/>
+    </resources>
+</document>

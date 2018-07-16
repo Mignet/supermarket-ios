@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSelectOptionView" customModule="FinancialManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy5-UW-c8s">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="exitAction" destination="iN0-l3-epB" eventType="touchUpInside" id="K8X-G7-2bg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zc-Ju-F80">
+                    <rect key="frame" x="75" y="0.0" width="339" height="736"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年化收益率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nda-QK-ZkI">
+                            <rect key="frame" x="18" y="50" width="119" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="8qZ-k4-dJl"/>
+                                <constraint firstAttribute="width" constant="119" id="ewZ-Ww-adK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.30980392156862746" green="0.34901960784313724" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyq-rx-yPX">
+                            <rect key="frame" x="18" y="79" width="93" height="31.666666666666671"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gyq-rx-yPX" secondAttribute="height" multiplier="83:28" id="gil-5n-uof"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="不限" backgroundImage="xn_FinancialManager_product_option_item_selected.png">
+                                <color key="titleColor" red="0.30588235294117649" green="0.5490196078431373" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectYearRateOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="KuK-bj-OgQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dys-eJ-jx1">
+                            <rect key="frame" x="120" y="79" width="93.333333333333314" height="31.333333333333329"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dys-eJ-jx1" secondAttribute="height" multiplier="83:28" id="Bh5-gh-4Dv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="8%以下" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectYearRateOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="AT6-V9-jb1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEg-Je-lq6">
+                            <rect key="frame" x="222.33333333333331" y="79" width="93" height="31.666666666666671"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="oEg-Je-lq6" secondAttribute="height" multiplier="83:28" id="7hM-rG-uRQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="8%～12%" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectYearRateOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="4DJ-t6-Ycb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i22-Ml-mXk">
+                            <rect key="frame" x="18" y="119.66666666666669" width="93" height="31.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="i22-Ml-mXk" secondAttribute="height" multiplier="83:28" id="UeQ-3Z-Fr3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="12%以上" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectYearRateOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="DP8-HB-lMe"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1V-GA-RM3">
+                            <rect key="frame" x="18" y="171" width="119" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="119" id="0QV-Qt-DLk"/>
+                                <constraint firstAttribute="height" constant="21" id="mV1-1d-GL2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.30980392159999998" green="0.34901960780000002" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-TL-VjI">
+                            <rect key="frame" x="18" y="200" width="93" height="31.666666666666657"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3OM-TL-VjI" secondAttribute="height" multiplier="83:28" id="7Ui-jM-4Xz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="不限" backgroundImage="xn_FinancialManager_product_option_item_selected.png">
+                                <color key="titleColor" red="0.30588235289999999" green="0.54901960780000003" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="asR-8L-DnN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOP-jo-1k6">
+                            <rect key="frame" x="120" y="200" width="93.333333333333314" height="31.333333333333343"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hOP-jo-1k6" secondAttribute="height" multiplier="83:28" id="Eif-2s-xRf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="1个月以内" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="SDu-27-OzV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-VQ-PzU">
+                            <rect key="frame" x="18" y="240.66666666666669" width="93" height="31.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2Ka-VQ-PzU" secondAttribute="height" multiplier="83:28" id="T3y-dj-WFe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="3-6个月" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="EgV-hI-fiU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DL-ry-H4a">
+                            <rect key="frame" x="120" y="240.33333333333331" width="93.333333333333314" height="31.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9DL-ry-H4a" secondAttribute="height" multiplier="83:28" id="9RK-bR-ze8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="6-12个月" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="wRj-7v-QRO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihf-ok-m9j">
+                            <rect key="frame" x="222.33333333333331" y="240.66666666666669" width="93" height="31.666666666666686"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ihf-ok-m9j" secondAttribute="height" multiplier="83:28" id="BwV-nS-uOS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="12个月以上" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="h05-bX-xWB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mny-63-a8y">
+                            <rect key="frame" x="222.33333333333331" y="200" width="93" height="31.666666666666657"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="mny-63-a8y" secondAttribute="height" multiplier="83:28" id="tCm-5g-KBb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="1-3个月" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDeadLineOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="SPs-wm-Yo7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02d-Ie-z3J">
+                            <rect key="frame" x="18" y="291.66666666666669" width="119" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="119" id="1z9-j1-tzg"/>
+                                <constraint firstAttribute="height" constant="21" id="R6B-8Z-djg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.30980392159999998" green="0.34901960780000002" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc2-x1-VlZ">
+                            <rect key="frame" x="18" y="320.66666666666674" width="93" height="31.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jc2-x1-VlZ" secondAttribute="height" multiplier="83:28" id="jJD-Om-5vn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="不限" backgroundImage="xn_FinancialManager_product_option_item_selected.png">
+                                <color key="titleColor" red="0.30588235289999999" green="0.54901960780000003" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTypeOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fpy-aD-53b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGa-6v-7tu">
+                            <rect key="frame" x="120" y="320.66666666666674" width="93.333333333333314" height="31.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WGa-6v-7tu" secondAttribute="height" multiplier="83:28" id="8fm-wC-s0c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="新手专享" backgroundImage="xn_FinancialManager_product_option_item_normal.png">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTypeOptionWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q02-jW-Q1d"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJR-BQ-0fb">
+                            <rect key="frame" x="0.0" y="686" width="110" height="50"/>
+                            <color key="backgroundColor" red="0.83921568627450982" green="0.8901960784313725" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="DcK-Rp-inT"/>
+                                <constraint firstAttribute="width" constant="110" id="wKt-mT-sAZ"/>
+                            </constraints>
+                            <state key="normal" title="重置">
+                                <color key="titleColor" red="0.30588235294117649" green="0.5490196078431373" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="resetAction" destination="iN0-l3-epB" eventType="touchUpInside" id="xbJ-YY-yfG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGs-JG-k2k">
+                            <rect key="frame" x="110" y="686" width="229" height="50"/>
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.5490196078431373" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MrX-vr-9EY"/>
+                            </constraints>
+                            <state key="normal" title="完成"/>
+                            <connections>
+                                <action selector="startUpdate" destination="iN0-l3-epB" eventType="touchUpInside" id="xaY-p8-QmM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-ry-ds9">
+                            <rect key="frame" x="18" y="649" width="321" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="27P-oV-1uz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="mny-63-a8y" firstAttribute="width" secondItem="3OM-TL-VjI" secondAttribute="width" id="0lj-1J-YPk"/>
+                        <constraint firstItem="WGa-6v-7tu" firstAttribute="width" secondItem="jc2-x1-VlZ" secondAttribute="width" id="4No-cn-jzL"/>
+                        <constraint firstAttribute="bottom" secondItem="OGs-JG-k2k" secondAttribute="bottom" id="4rt-Vw-YWG"/>
+                        <constraint firstItem="mny-63-a8y" firstAttribute="top" secondItem="Z1V-GA-RM3" secondAttribute="bottom" constant="8" id="5aP-hk-gcX"/>
+                        <constraint firstItem="ihf-ok-m9j" firstAttribute="top" secondItem="mny-63-a8y" secondAttribute="bottom" constant="9" id="7ZY-Mv-HYY"/>
+                        <constraint firstItem="9DL-ry-H4a" firstAttribute="leading" secondItem="2Ka-VQ-PzU" secondAttribute="trailing" constant="9" id="9Eq-KL-Vqg"/>
+                        <constraint firstItem="oEg-Je-lq6" firstAttribute="top" secondItem="nda-QK-ZkI" secondAttribute="bottom" constant="8" id="A5I-Aa-9DI"/>
+                        <constraint firstItem="i22-Ml-mXk" firstAttribute="width" secondItem="gyq-rx-yPX" secondAttribute="width" id="Ald-0f-tbm"/>
+                        <constraint firstItem="3OM-TL-VjI" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="BE1-6w-7M9"/>
+                        <constraint firstItem="9DL-ry-H4a" firstAttribute="top" secondItem="hOP-jo-1k6" secondAttribute="bottom" constant="9" id="Bw6-E0-qM4"/>
+                        <constraint firstItem="gyq-rx-yPX" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="Cmt-mG-v4o"/>
+                        <constraint firstItem="ihf-ok-m9j" firstAttribute="width" secondItem="9DL-ry-H4a" secondAttribute="width" id="DyL-ES-oD2"/>
+                        <constraint firstItem="dys-eJ-jx1" firstAttribute="top" secondItem="nda-QK-ZkI" secondAttribute="bottom" constant="8" id="FqE-BO-0mO"/>
+                        <constraint firstItem="OGs-JG-k2k" firstAttribute="leading" secondItem="AJR-BQ-0fb" secondAttribute="trailing" id="Qua-Ru-sLK"/>
+                        <constraint firstItem="oEg-Je-lq6" firstAttribute="leading" secondItem="dys-eJ-jx1" secondAttribute="trailing" constant="9" id="RP4-S5-CNs"/>
+                        <constraint firstAttribute="trailing" secondItem="OGs-JG-k2k" secondAttribute="trailing" id="RQB-gU-Y8N"/>
+                        <constraint firstItem="nda-QK-ZkI" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="RdG-Cy-KvB"/>
+                        <constraint firstItem="i22-Ml-mXk" firstAttribute="top" secondItem="gyq-rx-yPX" secondAttribute="bottom" constant="9" id="U3i-fc-o4l"/>
+                        <constraint firstItem="jc2-x1-VlZ" firstAttribute="top" secondItem="02d-Ie-z3J" secondAttribute="bottom" constant="8" id="UKt-N6-9C3"/>
+                        <constraint firstItem="2Ka-VQ-PzU" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="W3S-Ht-5GO"/>
+                        <constraint firstItem="02d-Ie-z3J" firstAttribute="top" secondItem="9DL-ry-H4a" secondAttribute="bottom" constant="20" id="WRT-fw-gQH"/>
+                        <constraint firstItem="jc2-x1-VlZ" firstAttribute="width" secondItem="2zc-Ju-F80" secondAttribute="width" multiplier="0.276" id="WmB-SD-kAq"/>
+                        <constraint firstItem="gyq-rx-yPX" firstAttribute="top" secondItem="nda-QK-ZkI" secondAttribute="bottom" constant="8" id="Yel-nO-WzW"/>
+                        <constraint firstItem="ihf-ok-m9j" firstAttribute="leading" secondItem="9DL-ry-H4a" secondAttribute="trailing" constant="9" id="YfK-JY-dPv"/>
+                        <constraint firstItem="3OM-TL-VjI" firstAttribute="width" secondItem="2zc-Ju-F80" secondAttribute="width" multiplier="0.276" id="aoA-Ld-jwJ"/>
+                        <constraint firstItem="2Ka-VQ-PzU" firstAttribute="width" secondItem="3OM-TL-VjI" secondAttribute="width" id="bZM-mc-mIF"/>
+                        <constraint firstItem="nda-QK-ZkI" firstAttribute="top" secondItem="2zc-Ju-F80" secondAttribute="top" constant="50" id="ciW-tE-RLV"/>
+                        <constraint firstItem="i22-Ml-mXk" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="f57-jg-zMN"/>
+                        <constraint firstItem="3OM-TL-VjI" firstAttribute="top" secondItem="Z1V-GA-RM3" secondAttribute="bottom" constant="8" id="fOM-0Z-C1k"/>
+                        <constraint firstItem="9DL-ry-H4a" firstAttribute="width" secondItem="2Ka-VQ-PzU" secondAttribute="width" id="g7V-1d-Mwl"/>
+                        <constraint firstItem="hOP-jo-1k6" firstAttribute="top" secondItem="Z1V-GA-RM3" secondAttribute="bottom" constant="8" id="gs4-TL-fLQ"/>
+                        <constraint firstItem="oEg-Je-lq6" firstAttribute="width" secondItem="dys-eJ-jx1" secondAttribute="width" id="h4s-Oh-fyh"/>
+                        <constraint firstItem="Z1V-GA-RM3" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="h5w-sZ-Aan"/>
+                        <constraint firstItem="jc2-x1-VlZ" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="hHP-sg-VBT"/>
+                        <constraint firstItem="dys-eJ-jx1" firstAttribute="width" secondItem="gyq-rx-yPX" secondAttribute="width" id="hv2-AV-gca"/>
+                        <constraint firstItem="WGa-6v-7tu" firstAttribute="top" secondItem="02d-Ie-z3J" secondAttribute="bottom" constant="8" id="hxf-wE-Odh"/>
+                        <constraint firstAttribute="bottom" secondItem="AJR-BQ-0fb" secondAttribute="bottom" id="iZF-ld-5H8"/>
+                        <constraint firstItem="2Ka-VQ-PzU" firstAttribute="top" secondItem="3OM-TL-VjI" secondAttribute="bottom" constant="9" id="ier-gv-JcZ"/>
+                        <constraint firstItem="mny-63-a8y" firstAttribute="leading" secondItem="hOP-jo-1k6" secondAttribute="trailing" constant="9" id="mgv-we-pqd"/>
+                        <constraint firstItem="hOP-jo-1k6" firstAttribute="width" secondItem="3OM-TL-VjI" secondAttribute="width" id="myH-5o-pQe"/>
+                        <constraint firstItem="AJR-BQ-0fb" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" id="oVK-x1-GCI"/>
+                        <constraint firstItem="WGa-6v-7tu" firstAttribute="leading" secondItem="jc2-x1-VlZ" secondAttribute="trailing" constant="9" id="oaQ-sE-AH2"/>
+                        <constraint firstItem="dys-eJ-jx1" firstAttribute="leading" secondItem="gyq-rx-yPX" secondAttribute="trailing" constant="9" id="pg5-UP-gi0"/>
+                        <constraint firstItem="gyq-rx-yPX" firstAttribute="width" secondItem="2zc-Ju-F80" secondAttribute="width" multiplier="0.276" id="phD-0h-AeZ"/>
+                        <constraint firstItem="Z1V-GA-RM3" firstAttribute="top" secondItem="i22-Ml-mXk" secondAttribute="bottom" constant="20" id="sjp-4H-hcf"/>
+                        <constraint firstItem="nnn-ry-ds9" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="tX4-KK-SQq"/>
+                        <constraint firstAttribute="trailing" secondItem="nnn-ry-ds9" secondAttribute="trailing" id="uK0-hr-ydV"/>
+                        <constraint firstItem="02d-Ie-z3J" firstAttribute="leading" secondItem="2zc-Ju-F80" secondAttribute="leading" constant="18" id="ug0-0d-1qr"/>
+                        <constraint firstItem="hOP-jo-1k6" firstAttribute="leading" secondItem="3OM-TL-VjI" secondAttribute="trailing" constant="9" id="y76-td-emF"/>
+                        <constraint firstItem="AJR-BQ-0fb" firstAttribute="top" secondItem="nnn-ry-ds9" secondAttribute="bottom" constant="16" id="yHc-8s-cIr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cy5-UW-c8s" secondAttribute="bottom" id="15R-HV-xim"/>
+                <constraint firstAttribute="trailing" secondItem="Cy5-UW-c8s" secondAttribute="trailing" id="CSf-b2-hUx"/>
+                <constraint firstItem="Cy5-UW-c8s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GCZ-xN-S1E"/>
+                <constraint firstItem="Cy5-UW-c8s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K0d-bl-Mvy"/>
+                <constraint firstAttribute="bottom" secondItem="2zc-Ju-F80" secondAttribute="bottom" id="Y1r-Pf-nhQ"/>
+                <constraint firstAttribute="trailing" secondItem="2zc-Ju-F80" secondAttribute="trailing" id="YLE-h8-DM4"/>
+                <constraint firstItem="2zc-Ju-F80" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="k8r-6V-voX"/>
+                <constraint firstItem="2zc-Ju-F80" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="75" id="mly-6k-yus"/>
+            </constraints>
+            <connections>
+                <outlet property="fiveDeadLine" destination="ihf-ok-m9j" id="Gv2-Xh-R8a"/>
+                <outlet property="fourDeadLine" destination="9DL-ry-H4a" id="Ctg-SU-CP0"/>
+                <outlet property="noDeadLine" destination="3OM-TL-VjI" id="3LE-7e-wX9"/>
+                <outlet property="noLimitYearRate" destination="gyq-rx-yPX" id="KoM-zv-huZ"/>
+                <outlet property="noType" destination="jc2-x1-VlZ" id="Jl2-4z-b5V"/>
+                <outlet property="oneDeadLine" destination="hOP-jo-1k6" id="UQ5-kf-zcX"/>
+                <outlet property="oneLimitYearRate" destination="dys-eJ-jx1" id="9wY-KD-yB6"/>
+                <outlet property="oneType" destination="WGa-6v-7tu" id="odQ-xs-WRI"/>
+                <outlet property="selectProductCountLabel" destination="nnn-ry-ds9" id="QHx-zb-PJQ"/>
+                <outlet property="threeDeadLine" destination="2Ka-VQ-PzU" id="lqe-sl-Awv"/>
+                <outlet property="threeLimitYearRate" destination="i22-Ml-mXk" id="1Gk-hx-A5Q"/>
+                <outlet property="twoDeadLine" destination="mny-63-a8y" id="Nlv-DM-Epa"/>
+                <outlet property="twoLimitYearRate" destination="oEg-Je-lq6" id="U0g-yb-hPp"/>
+            </connections>
+            <point key="canvasLocation" x="-702" y="-1301"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xn_FinancialManager_product_option_item_normal.png" width="166" height="56"/>
+        <image name="xn_FinancialManager_product_option_item_selected.png" width="166" height="56"/>
+    </resources>
+</document>

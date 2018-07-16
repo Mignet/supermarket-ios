@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="BrandPromotionImageItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fTB-3w-wG3">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="195"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-IT-DjU">
+                        <rect key="frame" x="108" y="0.0" width="35" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6ap-WK-bV5"/>
+                            <constraint firstAttribute="width" constant="35" id="st4-Lq-cxN"/>
+                        </constraints>
+                        <state key="normal" image="Brand_Promotion_Image_Item_nom.png"/>
+                        <state key="selected" image="Brand_Promotion_Image_Item_sele.png"/>
+                        <connections>
+                            <action selector="chooseBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="R2I-B4-9rt"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tis-IT-DjU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DGy-ve-pfp"/>
+                <constraint firstItem="fTB-3w-wG3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LSS-aV-Rdc"/>
+                <constraint firstAttribute="trailing" secondItem="tis-IT-DjU" secondAttribute="trailing" id="Prp-RC-AsE"/>
+                <constraint firstAttribute="bottom" secondItem="fTB-3w-wG3" secondAttribute="bottom" id="b30-Jy-n3C"/>
+                <constraint firstItem="fTB-3w-wG3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="j9i-Le-QBh"/>
+                <constraint firstAttribute="trailing" secondItem="fTB-3w-wG3" secondAttribute="trailing" id="nFh-F1-wDp"/>
+            </constraints>
+            <size key="customSize" width="143" height="195"/>
+            <connections>
+                <outlet property="brandImgView" destination="fTB-3w-wG3" id="wNd-OL-n85"/>
+                <outlet property="chooseBtn" destination="tis-IT-DjU" id="WRN-ul-Kfq"/>
+            </connections>
+            <point key="canvasLocation" x="-1068" y="-145"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brand_Promotion_Image_Item_nom.png" width="13" height="13"/>
+        <image name="Brand_Promotion_Image_Item_sele.png" width="13" height="13"/>
+    </resources>
+</document>

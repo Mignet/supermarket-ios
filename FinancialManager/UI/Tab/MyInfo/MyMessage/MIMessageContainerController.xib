@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIMessageContainerController">
+            <connections>
+                <outlet property="announceCountLabel" destination="peI-PW-lhY" id="UHm-Tg-9pg"/>
+                <outlet property="announceCountView" destination="OZ9-v3-Ch9" id="nD0-gk-jkF"/>
+                <outlet property="listScrollView" destination="Unh-J2-wfE" id="0Um-mF-XGf"/>
+                <outlet property="myMsgCountLabel" destination="IsR-Li-RXf" id="FDC-45-Ze0"/>
+                <outlet property="myMsgCountView" destination="0sF-fi-OdS" id="9vY-DR-BMN"/>
+                <outlet property="titleContainerScrollView" destination="xag-cY-9aT" id="bEb-Oz-cAS"/>
+                <outlet property="titleTabScrollView" destination="m0F-EI-HIW" id="2nJ-CV-4Ti"/>
+                <outlet property="view" destination="r0j-5a-BvZ" id="jPC-nQ-utk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="r0j-5a-BvZ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xag-cY-9aT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0F-EI-HIW">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="WS1-q7-OZK"/>
+                            </constraints>
+                        </scrollView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpY-1i-GV1">
+                            <rect key="frame" x="0.0" y="52" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="HY2-zN-pvc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="m0F-EI-HIW" secondAttribute="bottom" constant="2" id="195-Po-AIr"/>
+                        <constraint firstAttribute="trailing" secondItem="m0F-EI-HIW" secondAttribute="trailing" id="79w-HS-3Ch"/>
+                        <constraint firstItem="m0F-EI-HIW" firstAttribute="width" secondItem="xag-cY-9aT" secondAttribute="width" id="Gz3-rw-d8v"/>
+                        <constraint firstItem="kpY-1i-GV1" firstAttribute="leading" secondItem="xag-cY-9aT" secondAttribute="leading" id="Wfe-7c-yVO"/>
+                        <constraint firstAttribute="height" constant="52" id="YsU-ho-xlU"/>
+                        <constraint firstItem="m0F-EI-HIW" firstAttribute="top" secondItem="xag-cY-9aT" secondAttribute="top" id="goC-zs-NgM"/>
+                        <constraint firstAttribute="trailing" secondItem="kpY-1i-GV1" secondAttribute="trailing" id="kMN-GM-syC"/>
+                        <constraint firstAttribute="bottom" secondItem="kpY-1i-GV1" secondAttribute="bottom" constant="-0.5" id="nL4-wg-JES"/>
+                        <constraint firstItem="m0F-EI-HIW" firstAttribute="leading" secondItem="xag-cY-9aT" secondAttribute="leading" id="nRM-3z-DS4"/>
+                    </constraints>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unh-J2-wfE">
+                    <rect key="frame" x="0.0" y="52" width="320" height="516"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8bb-Sx-Tm8"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xag-cY-9aT" firstAttribute="top" secondItem="r0j-5a-BvZ" secondAttribute="top" id="1aW-fl-YjU"/>
+                <constraint firstItem="Unh-J2-wfE" firstAttribute="top" secondItem="xag-cY-9aT" secondAttribute="bottom" id="IVF-55-Mkl"/>
+                <constraint firstAttribute="bottom" secondItem="Unh-J2-wfE" secondAttribute="bottom" id="Tug-qi-Qqo"/>
+                <constraint firstAttribute="trailing" secondItem="xag-cY-9aT" secondAttribute="trailing" id="b48-gh-RPw"/>
+                <constraint firstAttribute="trailing" secondItem="Unh-J2-wfE" secondAttribute="trailing" id="gyX-D0-91t"/>
+                <constraint firstItem="Unh-J2-wfE" firstAttribute="leading" secondItem="r0j-5a-BvZ" secondAttribute="leading" id="vpZ-sZ-Pgn"/>
+                <constraint firstItem="xag-cY-9aT" firstAttribute="leading" secondItem="r0j-5a-BvZ" secondAttribute="leading" id="z1G-bU-w0U"/>
+            </constraints>
+            <point key="canvasLocation" x="266" y="351"/>
+        </view>
+        <view contentMode="scaleToFill" id="0sF-fi-OdS">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_CS_Trade_list_type_count_tag.png" translatesAutoresizingMaskIntoConstraints="NO" id="uBi-sI-rcq">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-Li-RXf">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IsR-Li-RXf" secondAttribute="trailing" id="8qM-fF-qVD"/>
+                <constraint firstAttribute="bottom" secondItem="uBi-sI-rcq" secondAttribute="bottom" id="LiT-M9-1fQ"/>
+                <constraint firstItem="uBi-sI-rcq" firstAttribute="top" secondItem="0sF-fi-OdS" secondAttribute="top" id="QfR-Na-kpD"/>
+                <constraint firstItem="IsR-Li-RXf" firstAttribute="top" secondItem="0sF-fi-OdS" secondAttribute="top" id="dyK-NQ-HVu"/>
+                <constraint firstItem="IsR-Li-RXf" firstAttribute="leading" secondItem="0sF-fi-OdS" secondAttribute="leading" id="eog-nz-zcB"/>
+                <constraint firstItem="uBi-sI-rcq" firstAttribute="leading" secondItem="0sF-fi-OdS" secondAttribute="leading" id="fkO-Cc-dFk"/>
+                <constraint firstAttribute="bottom" secondItem="IsR-Li-RXf" secondAttribute="bottom" id="pLH-Qw-aza"/>
+                <constraint firstAttribute="trailing" secondItem="uBi-sI-rcq" secondAttribute="trailing" id="tpM-hX-WIv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="654" y="140"/>
+        </view>
+        <view contentMode="scaleToFill" id="OZ9-v3-Ch9">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XN_CS_Trade_list_type_count_tag.png" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-Ka-pHi">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peI-PW-lhY">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="peI-PW-lhY" secondAttribute="trailing" id="Jks-e0-WMu"/>
+                <constraint firstItem="peI-PW-lhY" firstAttribute="leading" secondItem="OZ9-v3-Ch9" secondAttribute="leading" id="T3d-Ef-DgM"/>
+                <constraint firstAttribute="bottom" secondItem="FNI-Ka-pHi" secondAttribute="bottom" id="V3Z-B7-124"/>
+                <constraint firstItem="FNI-Ka-pHi" firstAttribute="top" secondItem="OZ9-v3-Ch9" secondAttribute="top" id="aYG-rL-xqd"/>
+                <constraint firstAttribute="bottom" secondItem="peI-PW-lhY" secondAttribute="bottom" id="dkO-7D-DnE"/>
+                <constraint firstItem="FNI-Ka-pHi" firstAttribute="leading" secondItem="OZ9-v3-Ch9" secondAttribute="leading" id="ewg-5C-0jA"/>
+                <constraint firstItem="peI-PW-lhY" firstAttribute="top" secondItem="OZ9-v3-Ch9" secondAttribute="top" id="iGR-SF-JtT"/>
+                <constraint firstAttribute="trailing" secondItem="FNI-Ka-pHi" secondAttribute="trailing" id="xJc-Q8-g4I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="535" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XN_CS_Trade_list_type_count_tag.png" width="40" height="40"/>
+    </resources>
+</document>

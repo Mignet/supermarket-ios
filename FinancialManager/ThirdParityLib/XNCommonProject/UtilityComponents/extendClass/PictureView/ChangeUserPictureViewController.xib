@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeUserPictureViewController">
+            <connections>
+                <outlet property="pictureImageView" destination="qpN-E6-hhg" id="zgD-dN-DiE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpN-E6-hhg">
+                    <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qpN-E6-hhg" secondAttribute="height" multiplier="1:1" id="Xh9-6L-2Nl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qpN-E6-hhg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6SM-1B-S6O"/>
+                <constraint firstItem="qpN-E6-hhg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="OB7-vh-Rwh"/>
+                <constraint firstItem="qpN-E6-hhg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="amj-FF-wtU"/>
+            </constraints>
+            <point key="canvasLocation" x="391" y="392"/>
+        </view>
+    </objects>
+</document>

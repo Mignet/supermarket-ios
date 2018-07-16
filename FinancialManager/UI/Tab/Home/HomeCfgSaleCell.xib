@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeCfgSaleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfy-QS-N0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-lG-xlq">
+                                <rect key="frame" x="0.0" y="-4" width="320" height="0.0"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bok-73-EWF">
+                                <rect key="frame" x="92.5" y="15" width="135" height="16"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xn_insurance_safe_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-oR-a8C">
+                                        <rect key="frame" x="0.0" y="0.0" width="14" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="至今为止交易无风险" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcC-k8-wpv">
+                                        <rect key="frame" x="23" y="-3" width="112" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.16862745098039217" green="0.63137254901960782" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="AKg-MR-OrB"/>
+                                    <constraint firstAttribute="width" constant="135" id="qyV-Rw-hGZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIS-sz-oeB">
+                                <rect key="frame" x="0.0" y="38" width="320" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pIS-sz-oeB" firstAttribute="leading" secondItem="Hfy-QS-N0a" secondAttribute="leading" id="254-K2-Ki4"/>
+                            <constraint firstItem="pIS-sz-oeB" firstAttribute="top" secondItem="bok-73-EWF" secondAttribute="bottom" constant="7" id="7N0-db-cGy"/>
+                            <constraint firstItem="bok-73-EWF" firstAttribute="top" secondItem="Hfy-QS-N0a" secondAttribute="top" constant="15" id="AtO-rI-IeH"/>
+                            <constraint firstAttribute="trailing" secondItem="EeG-lG-xlq" secondAttribute="trailing" id="BNW-WG-DDX"/>
+                            <constraint firstItem="bok-73-EWF" firstAttribute="centerX" secondItem="Hfy-QS-N0a" secondAttribute="centerX" id="FYq-9a-Q7A"/>
+                            <constraint firstAttribute="trailing" secondItem="pIS-sz-oeB" secondAttribute="trailing" id="GTI-P4-ii4"/>
+                            <constraint firstItem="bok-73-EWF" firstAttribute="top" secondItem="EeG-lG-xlq" secondAttribute="bottom" constant="19" id="PrR-Ka-aa2"/>
+                            <constraint firstAttribute="height" constant="82" id="ZY9-KQ-PDd"/>
+                            <constraint firstItem="EeG-lG-xlq" firstAttribute="leading" secondItem="Hfy-QS-N0a" secondAttribute="leading" id="aEl-Dh-yQe"/>
+                            <constraint firstAttribute="bottom" secondItem="pIS-sz-oeB" secondAttribute="bottom" constant="13" id="koH-MD-fw4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93725490196078431" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hfy-QS-N0a" secondAttribute="bottom" id="HMb-12-ter"/>
+                <constraint firstAttribute="trailing" secondItem="Hfy-QS-N0a" secondAttribute="trailing" id="Mqj-sv-qw5"/>
+                <constraint firstItem="Hfy-QS-N0a" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="VOa-o2-XZz"/>
+            </constraints>
+            <connections>
+                <outlet property="labelView" destination="pIS-sz-oeB" id="0au-wx-yce"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xn_insurance_safe_icon.png" width="28" height="32"/>
+    </resources>
+</document>

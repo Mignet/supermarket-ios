@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SignRecordCell" rowHeight="59" id="KGk-i7-Jjw" customClass="SignRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第n签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R51-oi-zrY">
+                        <rect key="frame" x="15" y="10" width="32" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10-30  23:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-Er-gcF">
+                        <rect key="frame" x="15" y="35" width="63.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.6元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES5-yt-3Xi">
+                        <rect key="frame" x="258.5" y="20" width="46.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vw-LH-ccd">
+                        <rect key="frame" x="15" y="57" width="290" height="0.5"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="T9g-w2-a0v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3Vw-LH-ccd" secondAttribute="bottom" id="0gG-4K-1KC"/>
+                    <constraint firstItem="3Vw-LH-ccd" firstAttribute="top" secondItem="IQM-Er-gcF" secondAttribute="bottom" constant="10" id="4jv-JP-ItN"/>
+                    <constraint firstAttribute="trailing" secondItem="ES5-yt-3Xi" secondAttribute="trailing" constant="15" id="5uv-bA-PTf"/>
+                    <constraint firstItem="ES5-yt-3Xi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dee-Rb-v8B"/>
+                    <constraint firstItem="R51-oi-zrY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TCD-Oh-oUh"/>
+                    <constraint firstItem="3Vw-LH-ccd" firstAttribute="leading" secondItem="IQM-Er-gcF" secondAttribute="leading" id="VHK-dI-nGc"/>
+                    <constraint firstItem="ES5-yt-3Xi" firstAttribute="trailing" secondItem="3Vw-LH-ccd" secondAttribute="trailing" id="mVk-hK-84X"/>
+                    <constraint firstItem="R51-oi-zrY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="r5X-Pg-ci8"/>
+                    <constraint firstItem="IQM-Er-gcF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tBR-ww-qlW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moneyLabel" destination="ES5-yt-3Xi" id="h0q-5y-Ykg"/>
+                <outlet property="rowLabel" destination="R51-oi-zrY" id="U4c-CL-ccb"/>
+                <outlet property="timeLabel" destination="IQM-Er-gcF" id="ohV-eQ-QiJ"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="-125"/>
+        </tableViewCell>
+    </objects>
+</document>

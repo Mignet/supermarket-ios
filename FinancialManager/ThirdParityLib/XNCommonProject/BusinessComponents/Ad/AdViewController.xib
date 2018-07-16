@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdViewController">
+            <connections>
+                <outlet property="exitAdButton" destination="1kE-iM-63U" id="Jev-6G-0ZK"/>
+                <outlet property="launchImg" destination="5IW-0l-A3K" id="644-Bs-NmO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-0l-A3K">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkg-ha-hBr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="clickAd:" destination="-1" eventType="touchUpInside" id="kMm-Tr-ih0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRA-Aj-z1H">
+                    <rect key="frame" x="281" y="24" width="94" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kE-iM-63U">
+                            <rect key="frame" x="12" y="7" width="70" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Sdt-EH-4PH"/>
+                                <constraint firstAttribute="width" constant="70" id="lfJ-gV-bsI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="跳过(4s)" backgroundImage="XN_Launch_icon.png"/>
+                            <connections>
+                                <action selector="clickIgnore:" destination="-1" eventType="touchUpInside" id="43e-J2-WsN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1kE-iM-63U" secondAttribute="trailing" constant="12" id="1ij-y7-3Bu"/>
+                        <constraint firstItem="1kE-iM-63U" firstAttribute="top" secondItem="QRA-Aj-z1H" secondAttribute="top" constant="7" id="YHf-LU-eyf"/>
+                        <constraint firstAttribute="height" constant="43" id="b0E-Ke-5tK"/>
+                        <constraint firstAttribute="width" constant="94" id="oud-np-jSe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5IW-0l-A3K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0MV-5p-Tjo"/>
+                <constraint firstItem="QRA-Aj-z1H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="4LP-jN-gb0"/>
+                <constraint firstItem="fkg-ha-hBr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8RH-bf-MOy"/>
+                <constraint firstAttribute="trailing" secondItem="fkg-ha-hBr" secondAttribute="trailing" id="HxS-4r-vhb"/>
+                <constraint firstAttribute="trailing" secondItem="5IW-0l-A3K" secondAttribute="trailing" id="OLA-z6-ZVm"/>
+                <constraint firstAttribute="trailing" secondItem="QRA-Aj-z1H" secondAttribute="trailing" id="PMm-Wn-ZG8"/>
+                <constraint firstItem="5IW-0l-A3K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XLV-Fm-LRe"/>
+                <constraint firstItem="fkg-ha-hBr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XdC-xP-fBx"/>
+                <constraint firstAttribute="bottom" secondItem="5IW-0l-A3K" secondAttribute="bottom" id="aDC-Vv-4ca"/>
+                <constraint firstAttribute="bottom" secondItem="fkg-ha-hBr" secondAttribute="bottom" id="ipy-nX-oRj"/>
+            </constraints>
+            <point key="canvasLocation" x="-3" y="267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="XN_Launch_icon.png" width="140" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
