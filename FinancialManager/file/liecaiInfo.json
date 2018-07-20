@@ -1,0 +1,22 @@
+{
+    "dayInvestAmt": "--",
+    "monthInvestAmt": "--",
+    "totalInvestAmt": "--",
+    "newBuytradeCount": "0",
+    "newBacktradeCount": "0",
+    "newCustomerCount": "0",
+    "newMsgCount": "0",
+    "minTime": "2017-04-19",
+    "thisMonthFee": "--",
+    "thisMonthTeamSaleAmount": "--",
+    "thisMonthAllowance": "--",
+    "teamCount": "0",
+    "level": "0",
+    "hasCustomer": "0",
+    "hasTeamMembers": "0",
+    "hasAdvertisement": "0",
+    "advertisementImageUrl": "",
+    "advertisementLinkUrl": "",
+    "leaderProfit": "--",
+    "feeMonth": 0
+}
